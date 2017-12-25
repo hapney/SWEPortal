@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../bootstrap/favicon.ico">
+
+    <title>Check Membership Points</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="searchID.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+<!--
+      <header class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Membership Portal</h3>
+              <nav class="nav nav-masthead">
+                <a class="nav-link" href="../cover">Home</a>
+                <a class="nav-link" href="../signin/">Login</a>
+                <a class="nav-link active" href="./">Check Points</a>
+              </nav>
+            </div>
+      </header>
+-->
+
+      <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="../cover">UK SWE Membership Portal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../cover">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../signin">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./">Check Points</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <form class="form-searchID">
+        <h2 class="form-searchID-heading">Check Points</h2>
+        <label for="inputID" class="sr-only">Student ID</label>
+        <input type="text" id="studentID" class="form-control" placeholder="Student ID" required autofocus>
+	<div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+
+    </div> <!-- /container -->
+  </body>
+</html>
