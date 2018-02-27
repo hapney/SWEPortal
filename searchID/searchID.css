@@ -1,8 +1,8 @@
 body {
   padding-top: 40px;
   padding-bottom: 40px;
-  //background-color: #eee;
-  background-image: url("../images/SWE_Conference2.jpg");
+  /* background-color: #eee; */
+  background-image: url("../images/SWE_Conference.jpg");
   background-size: cover;
 }
 
@@ -10,7 +10,7 @@ body {
   max-width: 330px;
   max-height: 270px;
   padding: 30px;
-  //margin: 0 auto;
+  /* margin: 0 auto; */
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
   margin: auto;
@@ -54,14 +54,14 @@ body {
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
-  color: #858585; //rgba(255, 255, 255, .5);
+  color: #858585; /* rgba(255, 255, 255, .5); */
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: #858585; //rgba(255, 255, 255, .25);
+  border-bottom-color: #858585; /* rgba(255, 255, 255, .25); */
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -69,8 +69,8 @@ body {
 }
 
 .nav-masthead .active {
-  color: #000000; //#fff;
-  border-bottom-color: #000000; //#fff;
+  color: #000000; /* #fff; */
+  border-bottom-color: #000000; /* #fff; */
 }
 
 @media (min-width: 48em) {

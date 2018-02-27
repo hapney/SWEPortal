@@ -1,0 +1,5 @@
+[17-Jan-2018 22:40:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home3/sydneyno/public_html/SWEPortal/includes/dboperation.php:651
+Stack trace:
+#0 /home3/sydneyno/public_html/SWEPortal/PHP/getStudentDetails.php(39): DbOperation->getStudentDetails('Rcde233')
+#1 {main}
+  thrown in /home3/sydneyno/public_html/SWEPortal/includes/dboperation.php on line 651

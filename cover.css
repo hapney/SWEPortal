@@ -109,13 +109,13 @@ body {
  */
 .cover {
   padding: 0 1.5rem;
-  //max-width: 500px;
+  /*//max-width: 500px;
   //max-height: 240px;
   //padding: 15px;
   //margin: 0 auto;
   //background-color: rgba(238, 238, 238, 0.7);
   //border-radius: 25px;
-  //color: #000;
+  //color: #000; */
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
@@ -147,7 +147,7 @@ body {
 
   /* Start the vertical centering */
   .site-wrapper-inner {
-    vertical-align: bottom; //middle;
+    vertical-align: bottom;
   } 
 
   /* Handle the widths */
@@ -165,3 +165,7 @@ body {
     width: 42rem;
   }
 } */
+
+.checkPointsButton {
+    margin-bottom: 20px;
+}

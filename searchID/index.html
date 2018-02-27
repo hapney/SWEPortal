@@ -20,21 +20,8 @@
 
     <div class="container">
 
-<!--
-      <header class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Membership Portal</h3>
-              <nav class="nav nav-masthead">
-                <a class="nav-link" href="../">Home</a>
-                <a class="nav-link" href="../signin/">Login</a>
-                <a class="nav-link active" href="./">Check Points</a>
-              </nav>
-            </div>
-      </header>
--->
-
       <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-        <a class="navbar-brand" href="../cover">UK SWE Membership Portal</a>
+        <a class="navbar-brand" href="http://ukyswe.com">UK SWE Membership Portal</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,28 +29,28 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="../cover">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="http://ukyswe.com">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../signin">Login</a>
+              <a class="nav-link" href="http://ukyswe.com/signin">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./">Check Points</a>
+              <a class="nav-link active" href="http://ukyswe.com/searchID">Check Points</a>
             </li>
           </ul>
         </div>
       </nav>
 
-      <form class="form-searchID">
+      <form class="form-searchID" action="http://ukyswe.com/OfficerDashboard/viewStudent" method="GET">
         <h2 class="form-searchID-heading">Check Points</h2>
         <label for="inputID" class="sr-only">Student ID</label>
-        <input type="text" id="studentID" class="form-control" placeholder="Student ID" required autofocus>
+        <input type="text" id="studentID" name="studentID" class="form-control" placeholder="Student ID" required autofocus>
 	<div class="checkbox">
           <label>
             <input type="checkbox" value="remember-me"> Remember me
           </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Check Points</button>
       </form>
 
     </div> <!-- /container -->

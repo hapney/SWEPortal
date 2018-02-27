@@ -1,0 +1,5 @@
+[17-Jan-2018 22:39:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home3/sydneyno/public_html/SWEPortal/OfficerDashboard/viewStudent/index.php on line 246
+[17-Jan-2018 22:40:19 UTC] PHP Warning:  file_get_contents(http://ukyswe.com/PHP/getStudentDetails.php): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+ in /home3/sydneyno/public_html/SWEPortal/OfficerDashboard/viewStudent/index.php on line 36
+[17-Jan-2018 22:40:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home3/sydneyno/public_html/SWEPortal/OfficerDashboard/viewStudent/index.php on line 246
+[17-Jan-2018 22:41:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home3/sydneyno/public_html/SWEPortal/OfficerDashboard/viewStudent/index.php on line 246
