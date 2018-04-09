@@ -1,12 +1,15 @@
 <?php
+    // getEvents.php
+    // Author: Sydney Norman
+    // This file retrieves the events with the specific eventTypeID passed in
 
     $eventTypeID = $_GET['eventTypeID'];
     
     // Create map with request parameters
-      $params = array ('eventTypeID' => $eventTypeID);
+    $params = array ('eventTypeID' => $eventTypeID);
  
-      // Build Http query using params
-      $query = http_build_query ($params);
+    // Build Http query using params
+    $query = http_build_query ($params);
     
     // Create Http context details
     $contextData = array (

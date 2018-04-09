@@ -4,11 +4,12 @@
 //
 // This class contains specific functions for querying data in
 // the MySQL database connected to via dbconnection.php and constants.php
-// for the Luna web api (handles SELECT, INSERT, UPDATE operations)
+// for the SWEPortal web api (handles SELECT, INSERT, UPDATE operations)
 //
 // References:
 //   modified from https://www.simplifiedios.net/swift-php-mysql-tutorial/
 //   by Belal Khan
+
 class DbOperation
 {
     public $errMessage = null;  //message if error occurs connecting to database

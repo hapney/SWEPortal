@@ -3,21 +3,15 @@
 // Author: Sydney Norman
 // Date 12/2017
 //
-// Search the user table for the emailID received from the app
-// If found, put the received username and password in it.
-// Send the uid in the user entry to the app
-//
-// input from app:
-//   username, password, emailID
-// output (emailID found):
-//   user table entry updated with username, password,
-//   active flag set true. uid sent to app with success message
-// output (emailID not found):
-//   failure message sent app
-//
-// References:
-//   modified from https://www.simplifiedios.net/swift-php-mysql-tutorial/
-//   by Belal Khan
+// Add the attendance list to the eventID in the database
+// 
+// input:
+//   eventType, event, col1, col2, col3, col4, attendanceText
+// output:
+//   a list of students successfully created,
+//   a list of students not successfully created
+//   a list of students successfully added to event attendance
+//   a list of students not successfully added to event attendance
 
 // Importing required scripts
 require_once '../includes/dboperation.php';
@@ -30,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'GET')
     //header("Access-Control-Allow-Origin: *");
     // See if proper parameters were provided
     if (isset($_POST['eventType']) && isset($_POST['event']) && isset($_POST['col1']) && isset($_POST['col2'])
-        && isset($_POST['col3']) && isset($_POST['col4']) /*&& isset($_POST['col5'])*/ && isset($_POST['attendanceText']))
+        && isset($_POST['col3']) && isset($_POST['col4']) && isset($_POST['attendanceText']))
     {
         // Get parameter values
         $eventType = $_REQUEST['eventType'];
@@ -39,11 +33,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'GET')
         $col2 = $_REQUEST['col2'];
         $col3 = $_REQUEST['col3'];
         $col4 = $_REQUEST['col4'];
-        /*$col5 = $_REQUEST['col5'];*/
         $attendanceText = $_REQUEST['attendanceText'];
         
         // Create a columns array
-	    $columns = array($col1, $col2, $col3, $col4 /*, $col5*/);
+	    $columns = array($col1, $col2, $col3, $col4);
 	    
 	    // Find the index of each column description in the array
 	    $hoursIdx = -1;
@@ -61,9 +54,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'GET')
 	      else if ($columns[$i] == "Hours") {
 	    	$hoursIdx = $i;
 	      }
-	      /*else if ($columns[$i] == "EmailAddress") {
-	    	$emailIdx = $i;
-	      }	*/	
 	    }
         
         // Create db operation object

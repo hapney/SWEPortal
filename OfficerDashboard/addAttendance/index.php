@@ -243,13 +243,6 @@
                 <option value="Hours">Hours Volunteered [optional]</option>
     		    <option value="">None</option>
               </select>
-            <!--
-    	      <select name="column5" required>
-    		    <option value="" disabled>Column 5</option>
-                <option value="EmailAddress">Email Address [optional]</option>
-                <option value="Hours">Hours Volunteered [optional]</option>
-    	        <option value="">None</option>
-    	      </select> -->
 	      </div>
 
 	      <textarea name="attendanceText" id="attendanceText" style="display:block;" class="form-control" autofocus>

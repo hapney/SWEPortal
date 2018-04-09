@@ -1,6 +1,6 @@
 <?php
 // Title: DbConnection
-// Author: Joshua Cockerill
+// Author: Sydney Norman
 //
 // This class contains a function for connecting to a MySQL database
 // using parameters specified in constants.php

@@ -1,6 +1,6 @@
 <?php
 // Title: Funcs
-// Author: Joshua Cockerill
+// Author: Sydney Norman
 //
 // This file contains important functions (not regarding database operations)
 // used with the Luna app's web api

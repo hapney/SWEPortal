@@ -3,21 +3,12 @@
 // Author: Sydney Norman
 // Date 12/2017
 //
-// Search the user table for the emailID received from the app
-// If found, put the received username and password in it.
-// Send the uid in the user entry to the app
+// Updates the event with the given eventID
 //
 // input from app:
-//   username, password, emailID
-// output (emailID found):
-//   user table entry updated with username, password,
-//   active flag set true. uid sent to app with success message
-// output (emailID not found):
-//   failure message sent app
-//
-// References:
-//   modified from https://www.simplifiedios.net/swift-php-mysql-tutorial/
-//   by Belal Khan
+//   eventID, eventName, eventDate, eventDescription, eventType, pointsPerHour, totalPoints
+// output:
+//   whether or not the event was updated successfully
 
 // Importing required scripts
 require_once '../includes/dboperation.php';

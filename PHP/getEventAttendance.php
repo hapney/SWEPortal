@@ -3,21 +3,14 @@
 // Author: Sydney Norman
 // Date 12/2017
 //
-// Search the user table for the emailID received from the app
-// If found, put the received username and password in it.
-// Send the uid in the user entry to the app
-//
-// input from app:
-//   username, password, emailID
-// output (emailID found):
-//   user table entry updated with username, password,
-//   active flag set true. uid sent to app with success message
-// output (emailID not found):
-//   failure message sent app
-//
-// References:
-//   modified from https://www.simplifiedios.net/swift-php-mysql-tutorial/
-//   by Belal Khan
+// Retrieves the event attendance for the eventID
+// 
+// input:
+//   eventID
+// output (eventID found):
+//   the event attendance
+// output (eventID not found):
+//   failure message
 
 // Importing required scripts
 require_once '../includes/dboperation.php';
@@ -47,8 +40,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'GET')
                     if ($studentInfo) {
                         
                         // Create Array of Student and Points/Hours
-	                    $studentInfo['Hours'] = $row['Hours'];
-	                    $studentInfo['Points'] = $row['Points'];
+	                $studentInfo['Hours'] = $row['Hours'];
+	                $studentInfo['Points'] = $row['Points'];
                         
                         $rows[] = $studentInfo;
                     }
